@@ -1,0 +1,10 @@
+{
+	"node": "n8n-nodes-tanvo.tanvo",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Miscellaneous"],
+	"resources": {
+		"credentialDocumentation": [{ "url": "https://github.com/tanvoai/n8n-nodes-tanvo?tab=readme-ov-file#credentials" }],
+		"primaryDocumentation": [{ "url": "https://github.com/tanvoai/n8n-nodes-tanvo?tab=readme-ov-file" }]
+	}
+}

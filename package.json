@@ -1,0 +1,67 @@
+{
+  "name": "n8n-nodes-tanvo",
+  "version": "0.1.0",
+  "description": "n8n node for Tanvo: generate images, video and songs with AI (Nano Banana, Seedream, Kling, Veo, Seedance, Suno) and run ready-made photo apps, with results as binary data.",
+  "license": "MIT",
+  "homepage": "https://tanvo.ai/developers?utm_source=npm&utm_medium=referral",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "tanvo",
+    "ai",
+    "image generation",
+    "video generation",
+    "ai music",
+    "text to image",
+    "image to video",
+    "nano banana",
+    "kling",
+    "veo",
+    "suno"
+  ],
+  "author": {
+    "name": "Tanvo",
+    "email": "support@tanvo.ai",
+    "url": "https://tanvo.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanvoai/n8n-nodes-tanvo.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "test": "npm run build && node --test test/node.test.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/TanvoApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Tanvo/Tanvo.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/tanvoai/n8n-nodes-tanvo/issues"
+  }
+}
